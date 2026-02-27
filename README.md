@@ -2,7 +2,7 @@
 
 A Claude skill that helps founders turn announcements into coordinated distribution systems — not just blog posts.
 
-Based on the [Anatomy of an Announcement](https://www.bostoncomms.com/anatomy-of-an-announcement) framework by Boston Communications Group.
+Based on [Anatomy of an Announcement](https://x.com/allisonbraley/status/2027098454439379412) by [Allison Braley](https://x.com/allisonbraley), Partner at Bain Capital Ventures.
 
 ## What it does
 
@@ -18,7 +18,7 @@ The output is a complete plan document plus ready-to-use content drafts: blog po
 ## Install
 
 ```bash
-npx @anthropic-ai/claude-code skill add WellDunDun/startup-announcement
+npx skills add WellDunDun/startup-announcement
 ```
 
 ## What the skill prevents
