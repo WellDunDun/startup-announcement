@@ -1,0 +1,81 @@
+{
+  "skill_name": "startup-announcement",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We just closed a $6M seed round led by Sequoia for our AI-powered threat detection platform. We have 3 design partners (can't name them yet) and want to announce next month. Our main goal is getting in front of CISOs at mid-market companies. How should we think about this?",
+      "expected_output": "A plan that treats the announcement as a distribution system, not just content. Should lead with what changes for CISOs, not the funding. Should evaluate media on reach AND depth.",
+      "files": [],
+      "assertions": [
+        {"id": "headline-names-change", "text": "Headlines name the CHANGE being made (what's different for the audience), not just the product. None of the headline options should follow the pattern 'Introducing [Product]: [tagline]' or lead with the company name."},
+        {"id": "leads-with-problem", "text": "The blog post opens with the CISO's problem or the change in the world — NOT with 'We're excited to announce' or a description of the product. The first paragraph should make a CISO nod in recognition before they even know what the product is."},
+        {"id": "funding-not-headline", "text": "The $6M funding is positioned as a supporting proof point, NOT as the headline or lead of the announcement. The plan explicitly acknowledges that funding is not the most interesting thing to CISOs."},
+        {"id": "media-reach-AND-depth", "text": "When evaluating media targets, the plan assesses outlets on BOTH reach (audience size, overlap with ICP) AND depth (length of typical piece, storytelling vs. facts). Not just a list of publications — an evaluation of the tradeoff."},
+        {"id": "synchronized-distribution", "text": "The distribution plan coordinates assets in a tight time window (same day or within hours), not a scattered 'post here, then later post there' approach. Specifies timing coordination."},
+        {"id": "amplification-specific-timing", "text": "The amplification ask to investors/advisors includes specific timing ('share Tuesday morning at 9am') and suggested talking points, not just a generic 'please share when it goes live.'"},
+        {"id": "persona-in-a-sentence", "text": "The target audience is described specifically enough to fit in one sentence with job title, company size, and a behavioral or motivational detail — not just 'CISOs' or 'security teams.'"},
+        {"id": "proof-points-skeptic-test", "text": "At least one proof point is framed to pass the skeptic test: it includes a specific number, metric, or outcome that would make a cynical reader think 'okay, maybe this is real' rather than 'sounds like every other startup.'"},
+        {"id": "social-post-hook-first-line", "text": "The founder's social post has a conversational hook in the first line that would make someone stop scrolling — not a corporate announcement opening like 'I'm thrilled to announce' or 'Today we're launching.'"},
+        {"id": "trap-awareness", "text": "The plan explicitly warns against or steers away from at least one of the three common traps: corporate press release approach, AI slop/hype approach, or feature-dump approach. It names the trap, not just avoids it."},
+        {"id": "success-tied-to-audience", "text": "Success metrics are specific to the chosen audience (e.g., demo requests from CISOs, not generic 'impressions' or 'website traffic'). Includes at least one metric that would be meaningless for a different audience."}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "We're launching our new open-source observability tool next week. We already have 2,000 GitHub stars from the beta and some good traction with platform engineering teams. I want to use this launch to recruit senior backend engineers. What's the plan?",
+      "expected_output": "A plan laser-focused on recruiting, with compressed timeline. Should evaluate which channels engineers actually read, not generic media.",
+      "files": [],
+      "assertions": [
+        {"id": "headline-names-change", "text": "Headlines name the CHANGE or the technical problem being solved, not just the product. Should imply stakes or a specific challenge that would intrigue an engineer."},
+        {"id": "leads-with-problem", "text": "The blog post opens with the problem in observability or the technical challenge — NOT with a product description or company introduction."},
+        {"id": "media-reach-AND-depth", "text": "When evaluating distribution channels, the plan assesses where senior engineers ACTUALLY spend time (HN, specific newsletters, GitHub, etc.) with reasoning about reach vs. depth for each, not just a generic list."},
+        {"id": "synchronized-distribution", "text": "Assets are coordinated to launch in a tight time window with specific timing, creating a moment rather than a trickle."},
+        {"id": "persona-in-a-sentence", "text": "The ideal engineer hire is described specifically — not just 'senior backend engineer' but includes what kind of problems they've worked on, what would make them leave their current role, or what technical interests they have."},
+        {"id": "proof-points-skeptic-test", "text": "At least one proof point includes a specific number or technical claim that demonstrates genuine substance (performance data, architecture decision, scale metric) — not just '2,000 GitHub stars.'"},
+        {"id": "social-post-hook-first-line", "text": "The founder's social post opens with a hook that would make an engineer stop scrolling — a technical insight, a provocative claim, or a problem statement. Not 'I'm excited to announce.'"},
+        {"id": "trap-awareness", "text": "The plan explicitly warns against or steers away from at least one common trap by name: treating this as a press release, leading with a feature list, or using generic hype."},
+        {"id": "recruiting-as-primary-lens", "text": "Every content asset is evaluated through the recruiting lens — 'would a great engineer read this and want to work here?' The product launch serves the recruiting goal, not the other way around."},
+        {"id": "timeline-adapts-to-constraints", "text": "The timeline adapts to the 'next week' constraint by cutting unnecessary steps (no video, no long media outreach) rather than suggesting the launch be delayed. Shows judgment about what to cut."},
+        {"id": "blog-opens-with-world-change", "text": "The blog post's first 2-3 sentences describe what's broken or changing in the world of observability BEFORE introducing the product. The reader should understand the stakes before they know the solution."}
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I've been building in stealth for 8 months on a payments infrastructure product for SMBs. No funding to announce but I have a working product and 12 paying customers. I want to come out of stealth and get my first wave of real customers. Budget is basically zero.",
+      "expected_output": "A lean, zero-budget plan that leads with customer proof. Should NOT default to press strategy. Should adapt the framework to constraints.",
+      "files": [],
+      "assertions": [
+        {"id": "headline-names-change", "text": "Headlines name the CHANGE for SMBs or the problem being solved, not just 'Introducing [Product].' Should make an SMB operator think 'that's my problem.'"},
+        {"id": "leads-with-problem", "text": "The blog post opens with the SMB payment problem — NOT with the company story or a product description. The reader should feel the pain before hearing about the solution."},
+        {"id": "customer-stories-not-buried", "text": "The 12 paying customers are the LEAD proof point, not buried as item #3. The plan treats them as the single strongest asset and builds the narrative around their outcomes, not around the product."},
+        {"id": "no-default-press-strategy", "text": "The plan does NOT default to traditional press outreach as a primary channel. If press is mentioned, there's explicit reasoning about why it IS or ISN'T appropriate given zero budget and no funding news."},
+        {"id": "synchronized-distribution", "text": "Even with zero budget, assets are coordinated to launch in a tight window, creating a single moment of visibility rather than scattered posts over days."},
+        {"id": "social-post-hook-first-line", "text": "The founder's social post opens with a hook — a surprising insight, a personal story beat, or a problem statement — not 'Today I'm coming out of stealth.'"},
+        {"id": "trap-awareness", "text": "The plan explicitly identifies at least one common trap to avoid and explains why — particularly relevant here where a founder might default to a press release or a feature dump."},
+        {"id": "timeline-adapts-to-constraints", "text": "The timeline is compressed to match zero budget and a solo/small team. It does NOT propose a 10-week plan. It shows judgment about what steps to cut and what to keep."},
+        {"id": "proof-points-specific-metrics", "text": "Proof points include specific customer outcomes with numbers (revenue impact, time saved, performance improvement) — not just 'we have 12 paying customers.'"},
+        {"id": "channels-match-icp", "text": "Distribution channels are chosen based on where SMB operators ACTUALLY spend time, with reasoning. Not just 'post on LinkedIn and X' without explaining why those channels reach the ICP."},
+        {"id": "honest-about-gaps", "text": "The plan is honest about what this announcement DOESN'T have (no big funding, no big name customers perhaps) and addresses how to compensate rather than ignoring the gaps."}
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "I'm a solo founder who ships fast — I use AI heavily for both building and marketing, so I can go from idea to live product in days, not months. I just finished an AI-powered competitive intelligence tool that monitors your competitors' pricing, feature launches, and positioning changes and sends you a weekly digest. I've been shipping products like this back to back and have a small but growing audience on X (~4k followers, mostly other builders and startup people). No funding, no team, just me and velocity. I want to announce this one in a way that actually converts users, not just gets likes from other indie hackers. My ICP is heads of marketing or product at B2B SaaS companies with 20-100 employees. What's my move?",
+      "expected_output": "A plan that explicitly navigates the audience mismatch between builders (current audience) and ICP (B2B SaaS). Should use different messaging for each. Should lead with ICP value, not build story.",
+      "files": [],
+      "assertions": [
+        {"id": "headline-names-change", "text": "Headlines name the CHANGE for B2B SaaS teams (competitive intelligence gap, getting blindsided) — not the product features or the build story."},
+        {"id": "leads-with-icp-problem", "text": "The blog post and LinkedIn content open with a problem that B2B SaaS marketing/product leads would recognize — not with how fast the product was built or the founder's AI workflow."},
+        {"id": "audience-bridge-explicit", "text": "The plan explicitly identifies the tension between the X audience (builders who won't buy) and the ICP (B2B SaaS leads who will) and proposes separate strategies for each rather than trying one message for both."},
+        {"id": "builder-story-contained", "text": "The 'built fast with AI' narrative appears ONLY in builder-facing content (X thread). It does NOT appear in ICP-facing content (blog post, LinkedIn) where it could undermine credibility with buyers."},
+        {"id": "synchronized-distribution", "text": "Assets are coordinated to launch in a tight window, creating a single moment of visibility."},
+        {"id": "social-post-hook-first-line", "text": "The ICP-facing social post (LinkedIn) opens with an insight or problem that a head of marketing would pause on — not a build story, not 'I just shipped,' not an announcement."},
+        {"id": "trap-awareness", "text": "The plan explicitly warns against at least one trap — particularly the AI slop trap (formulaic launch post to X that gets likes but no conversions) which is the most relevant trap for this founder's context."},
+        {"id": "channels-match-icp", "text": "Distribution strategy identifies WHERE B2B SaaS marketing/product leads actually spend time (LinkedIn, specific Slack communities, newsletters) rather than defaulting to the founder's existing X audience."},
+        {"id": "success-conversion-not-vanity", "text": "Success metrics focus on conversion (signups, paid users, demos from ICP accounts) and explicitly call out vanity metrics to AVOID (X likes, HN points, total impressions from wrong audience)."},
+        {"id": "proof-compensates-for-gaps", "text": "The plan acknowledges that a solo founder with no logos has thin social proof, and proposes concrete ways to compensate: product demo, sample output, specific detection example, or free trial."},
+        {"id": "timeline-matches-velocity", "text": "Timeline reflects the solo-shipper context — days/1-2 weeks, not months. Cuts video, press, and multi-week production. Shows judgment about what's worth doing vs. what's wasted effort."}
+      ]
+    }
+  ]
+}
