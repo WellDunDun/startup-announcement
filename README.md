@@ -4,6 +4,10 @@ A Claude skill that helps founders turn announcements into coordinated distribut
 
 Based on [Anatomy of an Announcement](https://x.com/allisonbraley/status/2027098454439379412) by [Allison Braley](https://x.com/allisonbraley), Partner at Bain Capital Ventures.
 
+> <a href="https://x.com/allisonbraley/status/2027098454439379412"><img src="https://img.shields.io/badge/Read_the_original-@allisonbraley_on_𝕏-000000?style=for-the-badge&logo=x&logoColor=white" alt="Read the original on X" /></a>
+
+The full article is also included in [`references/anatomy-of-an-announcement.md`](references/anatomy-of-an-announcement.md).
+
 ## What it does
 
 This skill walks founders through a four-step process for any startup announcement — funding rounds, product launches, coming out of stealth, or milestones:
