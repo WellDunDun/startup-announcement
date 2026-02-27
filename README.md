@@ -1,6 +1,6 @@
 # Startup Announcement Planner
 
-A Claude skill that helps founders turn announcements into coordinated distribution systems — not just blog posts.
+A skill that helps founders turn announcements into coordinated distribution systems — not just blog posts.
 
 Based on [Anatomy of an Announcement](https://x.com/allisonbraley/status/2027098454439379412) by [Allison Braley](https://x.com/allisonbraley), Partner at Bain Capital Ventures.
 
@@ -84,7 +84,41 @@ This matters because Claude naturally produces well-structured plans. The skill'
 
 ## Modify and contribute
 
-Fork the repo, edit `SKILL.md`, and re-run the evals to test your changes. The assertions in `evals/evals.json` are designed to catch regressions in strategic quality.
+Fork the repo, edit `SKILL.md`, and re-run the evals to test your changes.
+
+### Editing the skill
+
+`SKILL.md` is the entire skill — there's no build step. Edit it, reinstall, and test.
+
+### Editing evals
+
+The test cases and assertions live in `evals/evals.json`. The structure:
+
+```json
+{
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "The scenario given to Claude",
+      "expected_output": "What a good response looks like (human-readable)",
+      "assertions": [
+        {
+          "id": "headline-names-change",
+          "text": "Headlines name the CHANGE being made, not just the product..."
+        }
+      ]
+    }
+  ]
+}
+```
+
+Each eval has a `prompt` (the founder's scenario) and a list of `assertions` (what the output should get right). To modify:
+
+- **Add a scenario**: Add a new object to the `evals` array with a unique `id`, a realistic founder prompt, and assertions that test what matters.
+- **Add an assertion**: Add to any eval's `assertions` array. Give it a descriptive `id` and a `text` that's specific enough to grade as pass/fail. Good assertions test strategic quality ("does the blog open with the problem, not the product?"), not structure ("does a blog post exist?").
+- **Remove or edit**: Delete or modify any assertion that doesn't match your use case. The assertions are tuned for the original article's principles, but you may want different ones.
+
+After editing, re-run the skill against your prompts and grade the outputs to see if your changes improved things.
 
 ## License
 
